@@ -1,0 +1,42 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#mainContainer {
+  background-color: aqua;
+  width: 70%;
+  height: 800px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+#itemList {
+  background-color: azure;
+  width: 70%;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px black;
+}
+
+#item {
+  width: 50%;
+  height: 40px;
+  padding: 0px;
+  border: 0;
+  border-radius: 5px;
+}
+
+#addItem {
+  width: 50%;
+  height: 40px;
+  border: 0;
+  padding: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
