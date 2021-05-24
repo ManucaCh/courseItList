@@ -1,12 +1,14 @@
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #b8d8aa;
+  margin: 0px 0px 0px 0px;
 }
 
 #mainContainer {
-  background-color: aqua;
+  background-color: #75c69b;
   width: 70%;
   height: 800px;
-  margin: 20px;
+  margin: 40px 0 0 100px;
   padding: 10px;
   border-radius: 5px;
   display: flex;
@@ -17,19 +19,21 @@ body {
 }
 
 #itemList {
-  background-color: azure;
+  background-color: white;
   width: 70%;
   height: 600px;
   border-radius: 5px;
   box-shadow: inset 0 0 10px black;
 }
 
-#item {
+#itemInput {
   width: 50%;
   height: 40px;
   padding: 0px;
   border: 0;
   border-radius: 5px;
+  outline-style: none;
+  text-indent: 10px;
 }
 
 #addItem {
@@ -39,4 +43,13 @@ body {
   padding: 0px;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0px 0px 5px 0px black;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  #mainContainer {
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+  }
 }
