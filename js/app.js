@@ -5,24 +5,12 @@ function clearInput() {
 }
 
 function enterItem(e) {
-  const list = document.getElementById("list");
-  const oldHTML = list.innerHTML;
-  const itemValue = document.getElementById("itemInput").value;
-
   if (e.keyCode === 13) {
-    if (itemValue === "") {
-      alert("No podes agregar un elemento vacio!");
-    } else {
-      list.innerHTML = `${oldHTML} <li onclick="remove(${idList})" id="${idList}">${
-        document.getElementById("itemInput").value
-      }</li>`;
-      idList++;
-      clearInput();
-    }
+    addItem();
   }
 }
 
-function addItemHTML() {
+function addItem() {
   const list = document.getElementById("list");
   const oldHTML = list.innerHTML;
   const itemValue = document.getElementById("itemInput").value;
@@ -32,7 +20,8 @@ function addItemHTML() {
   } else {
     list.innerHTML = `${oldHTML} <li onclick="remove(${idList})" id="${idList}">${
       document.getElementById("itemInput").value
-    }</li>`;
+    }
+    </li>`;
     idList++;
     clearInput();
   }
